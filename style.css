@@ -1,0 +1,29 @@
+:root{
+  --bg:#f7fbf7;
+  --mint:#bff4d4;
+  --accent:#7ad5a6;
+  --text:#244;
+  --card:#ffffff;
+}
+
+*{box-sizing:border-box;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;padding:0}
+body{background:linear-gradient(180deg,var(--bg),#eef8f0);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center}
+#app{width:100%;max-width:400px;padding:16px}
+header{text-align:center;margin-bottom:12px}
+h1{font-size:1.5rem;margin-bottom:4px}
+.sub{color:#4a6b5a;font-size:0.9rem}
+
+#game-area{background:transparent;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;align-items:center}
+canvas{background:linear-gradient(180deg,#e7f6ee,#f2fbf6);border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.08);touch-action:none}
+
+#ui-bottom{display:flex;align-items:center;justify-content:space-between;padding:10px;width:100%}
+#tapCount{font-weight:600}
+#resetBtn{background:var(--accent);border:none;color:white;padding:8px 12px;border-radius:10px;cursor:pointer}
+
+#popup.hidden{display:none}
+#popup{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(rgba(20,40,30,0.25),rgba(20,40,30,0.25))}
+.popup-card{background:var(--card);padding:18px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,0.2);text-align:center;width:80%;max-width:320px}
+.popup-card h2{margin-bottom:6px}
+.popup-card p{color:#556b5e;margin-bottom:12px}
+.popup-card button{background:var(--mint);border:none;padding:8px 14px;border-radius:10px;cursor:pointer}
+footer{text-align:center;margin-top:10px;color:#6b8a75;font-size:0.85rem}
