@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BloomBuds — MochiBloop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>BloomBuds</h1>
+      <p class="sub">Tap your MochiBloop — grow peace, plant oxytocin 🌱</p>
+    </header>
+
+    <main>
+      <div id="game-area">
+        <canvas id="gameCanvas" width="360" height="640"></canvas>
+        <div id="ui-bottom">
+          <div id="tapCount">Taps: 0</div>
+          <button id="resetBtn">Reset</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Evolution pop -->
+    <div id="popup" class="hidden">
+      <div class="popup-card">
+        <h2>You Evolved! ✨</h2>
+        <p>MochiBloop feels lovelier.</p>
+        <button id="closePopup">Nice!</button>
+      </div>
+    </div>
+
+    <footer>
+      <small>Planting oxytocin…</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
